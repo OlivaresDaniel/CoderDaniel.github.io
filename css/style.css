@@ -1,0 +1,239 @@
+/* GENERAL */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: #100a13;
+    font-family: open sans;
+}
+
+/* INICIO */
+
+.container {
+    /* background: lightsalmon; */
+    /* border: 3px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 295px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 40px;
+    grid-template-areas:
+        "presentacion presentacion presentacion idiomas"
+        "presentacion presentacion presentacion modos"
+        "edad linkedin proyectos proyectos"
+        "github github lenguajes nivelingles"
+        "spotify spotify discord email"
+        "insta temperaturahorasitio temperaturahorasitio cumpleaños"
+
+    ;
+}
+
+@media (width < 1300px){
+    .container{
+        /* border: 3px solid rgb(255, 255, 255); */
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 295px;
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 40px;
+        grid-template-areas: 
+        "presentacion presentacion idiomas"
+        "presentacion presentacion modos"
+        "edad proyectos proyectos"
+        "nivelingles lenguajes linkedin"
+        "github github discord"
+        "spotify spotify email"
+        "insta temperaturahorasitio cumpleaños"
+    ;
+    }
+}
+
+
+
+@media (width < 900px){
+    .container{
+        /* border: 3px solid rgb(255, 255, 255); */
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 295px;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 40px;
+        grid-template-areas: 
+        "presentacion presentacion"
+        "presentacion presentacion"
+        "idiomas modos"
+        "edad proyectos"
+        "nivelingles proyectos"
+        "github github"
+        "discord linkedin"
+        "spotify spotify"
+        "email insta"
+        "temperaturahorasitio cumpleaños"
+        "temperaturahorasitio lenguajes"
+    ;
+    }
+}
+
+
+/* -------------------------------------------------------------------- */
+.container .presentacion {
+    grid-area: presentacion;
+    background: #4d306a;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+    background-image: url(/img/enterodaniel.png) (witdh: 200px;);
+
+}
+
+.presentacion p{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container .idiomas {
+    grid-area: idiomas;
+    background: #4d306a;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.idiomas h1, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .modos {
+    grid-area: modos;
+    background: #4d306a;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .edad {
+    grid-area: edad;
+    background: #d73f43;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .linkedin {
+    grid-area: linkedin;
+    background: #283f66;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .proyectos {
+    grid-area: proyectos;
+    /* background: lightblue; */
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .github {
+    grid-area: github;
+    background: #716006;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .lenguajes {
+    grid-area: lenguajes;
+    background: #52352d;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .nivelingles {
+    grid-area: nivelingles;
+    background: #226b68;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .spotify {
+    grid-area: spotify;
+    /* background: lightblue; */
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+    background-image: url(/img/LA_FALDA.jpeg);
+}
+
+.container .discord {
+    grid-area: discord;
+    background: #3baa8d;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .email {
+    grid-area: email;
+    background: #363266;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .insta {
+    grid-area: insta;
+    background: #233f51;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+
+}
+
+.container .temperaturahorasitio {
+    grid-area: temperaturahorasitio;
+    background: #1a568e;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.container .cumpleaños {
+    grid-area: cumpleaños;
+    background: #8b47cb;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+/* -------------------------------------------------------------------- */
